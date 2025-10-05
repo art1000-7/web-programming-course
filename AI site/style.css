@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #1a237e 0%, #fdd835 60%, #212121 100%);
+    color: #222;
+    min-height: 100vh;
+}
+.navbar {
+    background: #212121;
+    padding: 0.5em 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+.navbar a {
+    color: #fdd835;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 1.08em;
+}
+.navbar a:hover {
+    background: #1a237e;
+    color: #fff;
+}
+.content {
+    margin-top: 2em;
+    text-align: center;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(255,255,255,0.95);
+    padding: 2em 2em 2em 2em;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+}
+h1, h2 {
+    font-family: 'Segoe UI Semibold', Arial, sans-serif;
+    color: #1a237e;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 0 #fdd835, 0 2px 8px #21212133;
+}
+p {
+    font-size: 1.18em;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 1.5em;
+    text-shadow: 0 1px 0 #fdd83522;
+}
+a {
+    color: #1976d2;
+    text-decoration: underline;
+    transition: color 0.2s;
+    font-weight: 500;
+}
+a:hover {
+    color: #0d47a1;
+}
+img {
+    margin: 1.5em auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+/* Variants page background */
+.variants-bg {
+    background: linear-gradient(120deg, #212121 0%, #1a237e 60%, #fdd835 100%);
+}
+.variants-list {
+    list-style: none;
+    padding: 0;
+    margin: 2em 0;
+}
+.variants-list li {
+    background: #fdd835;
+    color: #212121;
+    margin: 0.5em auto;
+    padding: 1em;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 500;
+    box-shadow: 0 2px 8px #1a237e22;
+    max-width: 500px;
+}
+.variants-list a {
+    display: block;
+    padding: 0.5em 0.8em;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.07em;
+}
+
+/* The Original: blue and black */
+.variant-original:hover {
+    background: linear-gradient(90deg, #1a237e 60%, #212121 100%);
+    color: #fff;
+}
+
+/* Sinister Mark: orange and black */
+.variant-sinister:hover {
+    background: linear-gradient(90deg, #ff9800 60%, #212121 100%);
+    color: #fff;
+}
+
+/* Long Hair Mark: light blue and yellow */
+.variant-longhair:hover {
+    background: linear-gradient(90deg, #81d4fa 60%, #fdd835 100%);
+    color: #212121;
+}
+
+/* Omni Mark: red and white */
+.variant-omni:hover {
+    background: linear-gradient(90deg, #d32f2f 60%, #fff 100%);
+    color: #212121;
+}
+
+/* Full Mask Mark: black and blue */
+.variant-fullmask:hover {
+    background: linear-gradient(90deg, #212121 60%, #1a237e 100%);
+    color: #fdd835;
+}
+
+/* Other links in variants list */
+.variants-list a:not(.variant-original):not(.variant-sinister):not(.variant-longhair):not(.variant-omni):not(.variant-fullmask):hover {
+    background: #e3e3e3;
+    color: #1a237e;
+}

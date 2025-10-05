@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Week3 — CSS Practice — Артур Камбаров</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Пропустить навигацию</a>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">Артур Камбаров</h1>
+      <p class="site-desc">Коллекция решений: 15 упражнений по HTML/CSS — Beginner / Intermediate / Challenging</p>
+      <nav class="main-nav" aria-label="Навигация по разделам">
+      <ul>
+        <li><a href="#beginner">Beginner</a></li>
+        <li><a href="#intermediate">Intermediate</a></li>
+        <li><a href="#challenging">Challenging</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section id="beginner" class="category">
+      <h2>Beginner (5)</h2>
+      <div class="grid-links">
+        <a class="card" href="beginner/ex1.html">Ex1</a>
+        <a class="card" href="beginner/ex2.html">Ex2</a>
+        <a class="card" href="beginner/ex3.html">Ex3</a>
+        <a class="card" href="beginner/ex4.html">Ex4</a>
+        <a class="card" href="beginner/ex5.html">Ex5</a>
+      </div>
+    </section>
+
+    <section id="intermediate" class="category">
+      <h2>Intermediate (5)</h2>
+      <div class="grid-links">
+        <a class="card" href="intermediate/ex6.html">Ex6</a>
+        <a class="card" href="intermediate/ex7.html">Ex7</a>
+        <a class="card" href="intermediate/ex8.html">Ex8</a>
+        <a class="card" href="intermediate/ex9.html">Ex9</a>
+        <a class="card" href="intermediate/ex10.html">Ex10</a>
+      </div>
+    </section>
+
+    <section id="challenging" class="category">
+      <h2>Challenging (5)</h2>
+      <div class="grid-links">
+        <a class="card" href="challenging/ex11.html">Ex11</a>
+        <a class="card" href="challenging/ex12.html">Ex12</a>
+        <a class="card" href="challenging/ex13.html">Ex13</a>
+        <a class="card" href="challenging/ex14.html">Ex14</a>
+        <a class="card" href="challenging/ex15.html">Ex15</a>
+      </div>
+    </section>
+  </main>
+
+  <aside class="notes container" aria-label="Замечания">
+    <p>Site built with semantic HTML5, external CSS and responsive layout.</p>
+  </aside>
+
+  <footer class="site-footer container">
+    <p>&copy; <span id="year"></span> Артур Камбаров — Week 3 CSS Practice</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
