@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Watchlist — Cinematic Canvas</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" href="assets/icons/favicon.ico">
+</head>
+<body>
+  <header>
+    <!-- Navbar (common across all pages) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="assets/icons/logo.webp" alt="Cinematic Canvas Logo" width="30" height="30" class="me-2">
+        <span class="fw-bold">Cinematic Canvas</span>
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a> <!-- активная на главной -->
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="watchlist.html">Watchlist</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+
+        <!-- Search Form -->
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search movies or shows..." aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">
+            <i class="bi bi-search"></i>
+            </button>
+        </form>
+        </div>
+    </div>
+    </nav>
+  </header>
+
+  <main class="py-5">
+    <div class="container">
+      <h1 class="h4 mb-3">My Watchlist</h1>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <!-- Watchlist card example -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/poster5.jpg" class="card-img-top" alt="Poster: Neon Trails">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h6 mb-1">Neon Trails</h3>
+              <p class="text-muted small mb-2">2024 • Thriller</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <div><span class="text-warning"><i class="bi bi-star-fill"></i> 4.7</span></div>
+                <!-- More Info triggers modal -->
+                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#quickViewModal" data-title="Neon Trails" data-poster="assets/img/poster5.jpg" data-summary="A tense thriller set in a neon-soaked metropolis.">
+                  <i class="bi bi-eye"></i> More Info
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Another card -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/poster6.jpg" class="card-img-top" alt="Poster: Quiet Harbor">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h6 mb-1">Quiet Harbor</h3>
+              <p class="text-muted small mb-2">2022 • Drama</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <div><span class="text-warning"><i class="bi bi-star-fill"></i> 4.1</span></div>
+                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#quickViewModal" data-title="Quiet Harbor" data-poster="assets/img/poster6.jpg" data-summary="A tender drama about family ties and small-town secrets.">
+                  <i class="bi bi-eye"></i> More Info
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- add more cards similarly... -->
+      </div>
+    </div>
+
+    <!-- Quick View Modal -->
+    <div class="modal fade" id="quickViewModal" tabindex="-1" aria-labelledby="quickViewLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="quickViewLabel">Title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-3">
+              <div class="col-md-4">
+                <img id="quickViewPoster" src="assets/img/poster1.jpg" alt="Poster preview" class="img-fluid rounded">
+              </div>
+              <div class="col-md-8">
+                <p id="quickViewSummary">Summary text</p>
+                <p class="small text-muted"><strong>Rating:</strong> <span class="text-warning"><i class="bi bi-star-fill"></i> 4.5</span></p>
+                <a href="movie-details.html" class="btn btn-primary">Open Full Page</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="py-4 bg-light">
+    <div class="container small text-center">&copy; <span id="year3"></span> Cinematic Canvas</div>
+  </footer>
+
+  <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
