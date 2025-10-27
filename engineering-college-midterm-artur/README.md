@@ -60,14 +60,14 @@ The site provides a professional digital presence for the institution and is ful
 ---
 
 ## Assets & Credits
-- Images from [Unsplash](https://www.college.edu.kg/) (free, attribution-compliant)  
+- Images from [E|C](https://www.college.edu.kg/) (free, attribution-compliant)  
 - Icons from [Bootstrap Icons](https://icons.getbootstrap.com/)  
 - Fonts: System fonts and Bootstrap defaults  
 
 ---
 
 ## Live Demo
-[GitHub Pages URL](https://art1000-7.github.io/engineering-college-midterm-artur/)
+[GitHub Pages URL](art1000-7.github.io.)
 
 ---
 
