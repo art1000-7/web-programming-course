@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3em;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#myButton {
+    margin-top: 20px;
+    font-size: 1.1em;
+    padding: 20px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 250px;
+}
